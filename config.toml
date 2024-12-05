@@ -1,21 +1,20 @@
 baseURL = "http://example.org/"
 languageCode = "en-us"
-disableKinds = ["taxonomy"]
+disabledKinds = ["taxonomy", "term"]
 
 [build]
     writeStats = true
-
 [params]
-    title = "Sada Theme"
-    author = "Darshan Baral"
-    description = "Simple portfolio theme"
+title = "Resume"
+author = "Darshan Baral"
+
+description = "Simple portfolio theme"
     copyright = "Custom copyright message"
     theme = "dark" # `dark` or `light`
 
     # Profile section
     [params.profile]
-        name = "First Last"
-        title = "Abbr., K.A."
+        name = "Ilya Lezhnin"
         photo = "images/profile.jpg"
 
     # Section for links to social websites
@@ -23,24 +22,9 @@ disableKinds = ["taxonomy"]
         title = "Links"
 
         [[params.social.list]]
-        icon = "fab fa-linkedin-in"
-        url = "#"
-        title = "LinkedIn"
-
-        [[params.social.list]]
         icon = "fab fa-github"
-        url = "#"
+        url = "https://github.com/Thehedgeh0g"
         title = "GitHub"
-		
-		[[params.social.list]]
-        icon = "ai ai-google-scholar"
-        url = "#"
-        title = "Google Scholar"
-		
-		[[params.social.list]]
-        icon = "ai ai-researchgate"
-        url = "#"
-        title = "ResearchGate"		
 
     # Education section
     [params.education]
@@ -65,7 +49,7 @@ disableKinds = ["taxonomy"]
         [[params.language.list]]
         language = "English"
         level = "Fluent"
-				
+
         [[params.language.list]]
         language = "Bird"
         level = "Basic"
@@ -76,7 +60,7 @@ disableKinds = ["taxonomy"]
 
         [[params.hobbies.list]]
         interest = "Travelling"
-		
+
 		[[params.hobbies.list]]
         interest = "Music"
 
@@ -114,7 +98,7 @@ disableKinds = ["taxonomy"]
         title = "Awesome Project 1"
         url = "#"
         description = "Description of the *awesome* project 1"
-		
+
 		[[params.projects.list]]
         title = "Awesome Project 2"
         url = "#"
@@ -127,11 +111,11 @@ disableKinds = ["taxonomy"]
         [[params.skills.list]]
         skill = "Skill 1, Skill 2"
         skillrating = 95 # out of 100
-                
+
         [[params.skills.list]]
         skill = "Skill 3"
         skillrating = 90
-		
+
         [[params.skills.list]]
         skill = "Skill 4"
         skillrating = 80
